@@ -1,5 +1,5 @@
 {% set name = "protols" %}
-{% set version = "0.6.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/coder3101/protols/archive/{{ version }}.tar.gz
-  sha256: b6d5ff08d6a922038c536bb29c5d5f8c9e52b702690d0b9edcdc86999f72c3d1
+  sha256: 41a6dea5ca7a41eae09437571d719cdbaa413c0e06e7c9bb596731fbc66d466c
 
 build:
   number: 0

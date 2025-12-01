@@ -1,8 +1,7 @@
-{% set name = "protols" %}
 {% set version = "0.13.0" %}
 
 package:
-  name: {{ name|lower }}
+  name: protols
   version: {{ version }}
 
 source:
@@ -10,7 +9,7 @@ source:
   sha256: 021da5ab8542a6a8b2f65ab1173e51ad0e4931c503b8d74b534f64c10927fcce
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:

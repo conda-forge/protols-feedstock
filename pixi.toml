@@ -5,7 +5,7 @@
 
 [workspace]
 name = "protols-feedstock"
-version = "3.54.1"  # conda-smithy version used to generate this file
+version = "3.54.2"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/protols-feedstock"
 authors = ["@conda-forge/protols"]
 channels = ["conda-forge"]
@@ -44,15 +44,6 @@ description = "Debug protols-feedstock with variant linux_aarch64_ directly (wit
 [tasks."inspect-linux_aarch64_"]
 cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_.yaml"
 description = "List contents of protols-feedstock packages built for variant linux_aarch64_"
-[tasks."build-linux_ppc64le_"]
-cmd = "conda-build build recipe -m .ci_support/linux_ppc64le_.yaml --suppress-variables --clobber-file .ci_support/clobber_linux_ppc64le_.yaml"
-description = "Build protols-feedstock with variant linux_ppc64le_ directly (without setup scripts)"
-[tasks."debug-linux_ppc64le_"]
-cmd = "conda-build debug recipe -m .ci_support/linux_ppc64le_.yaml"
-description = "Debug protols-feedstock with variant linux_ppc64le_ directly (without setup scripts)"
-[tasks."inspect-linux_ppc64le_"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_.yaml"
-description = "List contents of protols-feedstock packages built for variant linux_ppc64le_"
 [tasks."build-osx_64_"]
 cmd = "conda-build build recipe -m .ci_support/osx_64_.yaml --suppress-variables --clobber-file .ci_support/clobber_osx_64_.yaml"
 description = "Build protols-feedstock with variant osx_64_ directly (without setup scripts)"

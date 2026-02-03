@@ -1,4 +1,4 @@
-{% set version = "0.13.2" %}
+{% set version = "0.13.3" %}
 
 package:
   name: protols
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://github.com/coder3101/protols/archive/{{ version }}.tar.gz
-  sha256: 7b1e94304e704bafdccbe988d97cadf8aa17e19d09a43fe9aca60d8b68f622b3
+  sha256: b74bb1e2f2bbaacb0f9bb32d372eecb80ca62a722bd0148d11174ccf71cf07df
 
 build:
   number: 0
-  skip: True  # [ppc64le]
+  skip: true  # [ppc64le]
 
 requirements:
   build:
